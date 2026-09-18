@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 venv/
 dataset/
+data/midv2020/raw/
+data/midv2020/yolo/
