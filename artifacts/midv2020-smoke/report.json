@@ -1,0 +1,100 @@
+{
+  "artifact": "MIDV-2020 smoke test",
+  "source": "MIDV-2020",
+  "source_record": "https://zenodo.org/records/18786808",
+  "official_page": "https://l3i-share.univ-lr.fr/MIDV2020/midv2020.html",
+  "license": "CC BY-SA 2.5",
+  "face_attribution": "Generated Photos (https://generated.photos/)",
+  "conversion": {
+    "mode": "photo",
+    "sample_count": 4,
+    "train_count": 3,
+    "val_count": 1,
+    "val_ratio": 0.25,
+    "seed": 20260918,
+    "label_class": "MRZ",
+    "annotation_method": "template MRZ box mapped through photo doc_quad homography"
+  },
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests",
+    "passed": 3
+  },
+  "samples": [
+    {
+      "document_type": "aze_passport",
+      "source_file": "data/midv2020/smoke/photo/images/aze_passport/00.jpg",
+      "source_sha256": "4311175da9da3b8d258e947b0660dca91b01b994d62d0b3e7be459f5c06d0e28",
+      "source_size": [
+        2268,
+        4032
+      ],
+      "bbox_xyxy": [
+        503.085,
+        2746.995,
+        1668.152,
+        3097.031
+      ],
+      "yolo": "0 0.478668 0.724706 0.513698 0.086815",
+      "split": "train",
+      "artifact_image": "images/aze_passport_00.jpg",
+      "artifact_sha256": "121b70d896501c64345cbd9d691fd9b9b86dbef5de943610d9d45ca4dd6f9ee5"
+    },
+    {
+      "document_type": "grc_passport",
+      "source_file": "data/midv2020/smoke/photo/images/grc_passport/00.jpg",
+      "source_sha256": "e71b4a719d6269f75299f40b4583f81fce032c4bc262374c4ae60b547d1b856e",
+      "source_size": [
+        2268,
+        4032
+      ],
+      "bbox_xyxy": [
+        375.815,
+        1744.575,
+        2008.031,
+        2313.187
+      ],
+      "yolo": "0 0.525539 0.503195 0.719672 0.141025",
+      "split": "val",
+      "artifact_image": "images/grc_passport_00.jpg",
+      "artifact_sha256": "931a5f20e6d2506f1947706cfb683671295b77c85853154fd5d4d1003cde5a92"
+    },
+    {
+      "document_type": "lva_passport",
+      "source_file": "data/midv2020/smoke/photo/images/lva_passport/00.jpg",
+      "source_sha256": "9e7d98bd6559e6834d4af847dae1530b2fa1c4757e8e407f669fc28d3c502b71",
+      "source_size": [
+        2268,
+        4032
+      ],
+      "bbox_xyxy": [
+        345.874,
+        1690.77,
+        2078.904,
+        1790.383
+      ],
+      "yolo": "0 0.534563 0.431691 0.764122 0.024706",
+      "split": "train",
+      "artifact_image": "images/lva_passport_00.jpg",
+      "artifact_sha256": "cd804beaa45926af669d8a8979d07c4f5da0c232664cdc6623450fff8c3acb44"
+    },
+    {
+      "document_type": "srb_passport",
+      "source_file": "data/midv2020/smoke/photo/images/srb_passport/00.jpg",
+      "source_sha256": "90c578d5d184daae6c7c20212737b60c33fea1bd2e940fdab9ecdde315725598",
+      "source_size": [
+        2268,
+        4032
+      ],
+      "bbox_xyxy": [
+        543.384,
+        2258.705,
+        2031.927,
+        2831.273
+      ],
+      "yolo": "0 0.567749 0.631198 0.656324 0.142006",
+      "split": "train",
+      "artifact_image": "images/srb_passport_00.jpg",
+      "artifact_sha256": "5be5ad33bca75ea1de521554dca71098eda0955e904796a2e3faf93978e1548d"
+    }
+  ]
+}
